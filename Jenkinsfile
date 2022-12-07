@@ -6,6 +6,7 @@ pipeline {
         stage('Upload source code to S3') {
             steps {
                 //
+                sh "ls ${file1}"
                 echo "Inside Upload source code to S3 ${params.Application}"
                 sh """
                 pwd
